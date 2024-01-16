@@ -1,0 +1,13 @@
+{
+    "title": "Garry's Mod Randomizer",
+    "description": "",
+    "type": "gamemode",
+    "tags": [
+        "comic",
+        "fun"
+    ],
+    "ignore": [
+        ".git/*",
+        "README.md"
+    ]
+}

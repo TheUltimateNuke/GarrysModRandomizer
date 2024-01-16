@@ -1,0 +1,7 @@
+"randomizer"
+{
+	"base"		"sandbox"
+	"title"		"randomizer"
+	"category"	"other"
+	"menusystem"	"1"
+}
