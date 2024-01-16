@@ -4,4 +4,5 @@
 	"title"		"randomizer"
 	"category"	"other"
 	"menusystem"	"1"
+	"workshopid"	"3140474956"
 }
