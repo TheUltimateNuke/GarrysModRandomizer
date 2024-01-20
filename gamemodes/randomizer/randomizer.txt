@@ -5,4 +5,43 @@
 	"category"	"other"
 	"menusystem"	"1"
 	"workshopid"	"3140474956"
+
+	"settings"	{
+		1
+		{
+			"name"	"nrm_randomproponkill"
+			"text"	"Random Prop on Kill"
+			"help"	"Whether to spawn a random prop from the spawnmenu when an enemy is killed"
+			"type"	"CheckBox"
+			"default"	"1"
+			"singleplayer"	"1"
+		}
+		2
+		{
+			"name"	"nrm_randomweapononkill"
+			"text"	"Random Weapon on Kill"
+			"help"	"Whether to equip a random weapon from the spawnmenu when an enemy is killed"
+			"type"	"CheckBox"
+			"default"	"1"
+			"singleplayer"	"1"
+		}
+		3
+		{
+			"name"	"nrm_randomgravity"
+			"text"	"Random Gravity"
+			"help"	"Whether to change gravity every player spawn"
+			"type"	"CheckBox"
+			"default"	"1"
+			"singleplayer"	"1"
+		}
+		4 
+		{
+			"name"	"nrm_randomgravitychance"
+			"text"	"Random Gravity Chance"
+			"help"	"Percentage of chance to change gravity every player spawn"
+			"type"	"Numeric"
+			"default"	"70"
+			"singleplayer"	"1"
+		}
+	}
 }

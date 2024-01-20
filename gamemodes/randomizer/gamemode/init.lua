@@ -1,3 +1,4 @@
+AddCSLuaFile("cl_event_timer.lua")
 AddCSLuaFile("cl_init.lua")
 AddCSLuaFile("shared.lua")
 
