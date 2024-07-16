@@ -1,20 +1,24 @@
 if not CLIENT then return end
-
-
 local PANEL = {}
-
+local timerText
 function PANEL:Init()
     self:Dock(TOP)
-
     self.TimerValue = math.huge
     self.TimerText = vgui.Create("DLabel", self)
-    hook.Add("NRM_EventTimerTick", "nrm_receive_timer_tick", function(timerVal)
-        self.TimerValue = timerVal
-        self.TimerText:SetText(math.floor(self.TimerValue))
-    end)
+    timerText = self.TimerText
     self.TimerText:SetContentAlignment(5)
     self.TimerText:SetFont("DermaLarge")
     self.TimerText:Dock(FILL)
 end
+
+net.Receive(
+    "nrm_timer",
+    function()
+        local timerVal = net.ReadFloat()
+        if not timerVal then return end
+        PANEL.TimerValue = timerVal
+        timerText:SetText(math.floor(PANEL.TimerValue))
+    end
+)
 
 vgui.Register("EventTimerPanel", PANEL, "DPanel")

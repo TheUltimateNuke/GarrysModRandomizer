@@ -1,7 +1,6 @@
 AddCSLuaFile("cl_event_timer.lua")
 AddCSLuaFile("cl_init.lua")
 AddCSLuaFile("shared.lua")
-
 include("shared.lua")
-
 DEFINE_BASECLASS("sandbox")
+util.AddNetworkString("nrm_timer")

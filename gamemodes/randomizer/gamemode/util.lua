@@ -63,6 +63,7 @@ function M:SpawnVehicle(vtable, pos, ang)
     if vtable.Members then
         table.Merge(Ent, vehicle.Members)
     end
+
     return Ent
 end
 

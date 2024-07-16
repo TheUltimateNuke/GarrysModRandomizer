@@ -1,0 +1,5 @@
+{
+    "[glua]": {
+        "editor.defaultFormatter": "goz3rr.vscode-glualint"
+    },
+}
